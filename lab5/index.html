@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/index.css">
+        <title>Продам гараж</title>
+    </head>
+    <body>
+        <header class="head">
+            <a href="index.html">Головна</a>
+            <a href="about.html">Інфо</a>
+            <a href="contacts.html">Учасники Картелю</a>
+            <a href="content/база.jpg">База :)</a>
+            <h3 id="number">чим підчепити єврейську дівчину?</h3>
+            <p ondblclick="createForm('head')" class="edit">Редагувати</p>
+        </header>
+        <div class="main">
+            <div class="leftside">
+                <div class="top">
+                    <div class="menu">
+                        <div tabindex="0" class="topmenu">
+                            <img src="content/Лисий.jpg" style="width: 100%;">
+                            <h3 style="margin:12px; text-align: center;">немає сечі терпіти:</h3>
+                            <ul>
+                                <li>ці прокляті борошна</li>
+                                <li>меми</li>
+                                <li>кацапів</li>
+                            </ul>
+                            <p ondblclick="createForm('topmenu')" class="edit">Редагувати</p>
+                        </div>
+                        <div class="bottommenu">
+                            <h3 style="margin:12px; text-align: center;">Найкращі рецепти московьских немовлят</h3>
+                            <ol type="1">
+                                <li>у власному соці</li>
+                                <li>під пиво покатить</li>
+                                <li>з бавовною</li>
+                                <li>запеченому в рукаві</li>
+                                <li>зафаршированому ЗСУшниками </li>
+                            </ol>
+                            <p ondblclick="createForm('bottommenu')" class="edit">Редагувати</p>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <h3>1. Поміняйте місцями контент блоків x та y</h3>
+                        <button onclick="changeText('number', 'phrase')">Змінити місцями</button>
+                        <h3>2. Напишіть функцію, яка обчислює площу кола,
+                            беручи необхідні значення із відповідних змінних у
+                            скрипті, і виводить отриманий результат в кінці
+                            контенту в блоці «3»</h3>
+                        <label for="radius">Введіть значення радіусу: </label>
+                        <input type="number" id="radius" value=0><br><br>
+                        <button onclick="getRadius('radius')">Обрахувати радіус</button>
+                        <h3>3. Напишіть скрипт, який визначає кількість
+                            максимальних чисел із 10 значень, беручи необхідні
+                            значення із відповідної форми в блоці «3», а
+                            отриманий результат виводить за допомогою
+                            діалогового вікна і зберігає в cookies</h3>
+                        <form name="maxValue">
+                            <label for="value">Введіть значення 10 чисел:</label>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <input type="number" class="value" value = 0>
+                            <br>
+                            <br>
+                        </form>
+                        <button onclick="getMax('value')">Отримати максимальне значення</button>
+                        <h3>4. Напишіть скрипт, який при настанні події blur змінює колір фону блоку «2» на
+                            вказаний користувачем і зберігає відповідне значення кольору в localStorage
+                            броузера так, щоб при наступному відкриванні веб-сторінки значення кольору
+                            фону блоку «2» встановлювалось із збереженого значення в localStorage.</h3>
+                        <input type="color" id="localColor"><br><br>
+                        <button onclick="saveColor('localColor')">Зберегти колір</button>
+                        <h1 style="text-align: center; font-family: 'Times New Roman', Times, serif;">better call Budanov</h1>
+                        <p> Іван, А ви знали що у військовополонених  є права, Женевська конвенція каже так, І я  
+                            також, я вірю, що у кожної свині собаки та  Ваньки є права, якщо він вчасно здасться у  
+                            полон до ЗСУ, краще телефонуй Буданову та  здавайся в полон. Ти пілотуєш гелікоптер,  
+                            але начальство весь час змушує тебе  літати над Україною, де по тобі весь час  
+                            щось прилітає. Ти ж не хочеш бути збитим  якимось Миколою, краще телефонуй Кирилу 
+                            Та зроби мільйон... 6 місяців по тому...  прилетів? ми  прилетіли в Україну, сідай ми їдемо на Лівий берег
+                            ?подождите А как же екипаж? Вибач, хлопче,  Екіпаж в угоду не входив
+                            </p>
+                        <img src="content/Budanov.png" style="float:right; margin-left: 10px; width: 70%;">
+                        <p>Перше правило головного управління розвідки  Міністерства оборони України нікому не казати  
+                            що ти український шпигун зрозуміло Агент Кароліна  Я є дерево ви будете гастролювати на болотах щоб  
+                            догнатити на ЗСУ Агент Кароліна ваша місія якщо  ви вирішите її прийняти так О капітан Мій капітан
+                            Ало Кирило-семпай Мені здається вони почали  про щось підозрювати табайкотувати концерти на  
+                            птахофабриках Мені дуже творожно треба зустрітися  зустрінемось у Ялті після звільнення Кароліно Ти  
+                            До чого приводить зрада
+                            файно попрацювала на благо українського народу  чим спокутала свою ганьбу перед історією  
+                            однак у зрадниці може бути лише один  кінець нічого особистого Кароліна  <p> 
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi minus voluptatem dolore ea necessitatibus nam ex quisquam, tempore quaerat sed sit exercitationem doloremque, totam, vero harum repudiandae sint recusandae ipsam! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo fuga illo soluta, vitae officia quae aspernatur fugiat voluptates molestias ut numquam minima corporis dignissimos repellat vel corrupti pariatur? Beatae, neque! <p> 
+                                <h3>5. Напишіть скрипт редагування вмісту (текст і HTML) номерних блоків (1..6):</h3>
+                        <p ondblclick="createForm('center')" class="edit">Редагувати</p>
+                    </div>
+                </div>
+                <div class="footer">
+                    <h3 id="phrase">совком</h3>
+                    <div class="contact">
+                        <h4>Контакти</h4>
+                        <p>+38 767 45 4343</p>
+                        <p>+38 777 31 1488</p>
+                        <p>+38 098 512 9334</p>
+                    </div>
+                    <p ondblclick="createForm('footer')" class="edit">Редагувати</p>
+                </div>
+            </div>
+            <div class="column">
+                <h2 style="text-align:center;color:whitesmoke;">Фотосет</h2>
+                <img src="content/fashionshow.jpg" class="photoset">
+                <img src="content/gta.jpg" class="photoset">
+                <img src="content/Saul.png" class="photoset">
+                <img src="content/polloshermanos.jpg" class="photoset">
+                <p ondblclick="createForm('column')" class="edit">Редагувати</p>
+            </div>
+        </div>
+        <script src="script/script.js"></script>
+    </body>
+</html>
